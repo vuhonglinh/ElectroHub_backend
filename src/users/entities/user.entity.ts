@@ -19,5 +19,5 @@ export class User {
     updated_at: Date;
 
     @OneToMany(() => Post, (post) => post.user_id)
-    posts: Post
+    posts: Post[]
 }
