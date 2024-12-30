@@ -10,7 +10,7 @@ export class UsersService {
 
   constructor(
     @InjectRepository(User)
-    private userRepostory: Repository<User>) { }
+    private readonly userRepostory: Repository<User>) { }
   async create(createUserDto: CreateUserDto) {
     try {
       const user = this.userRepostory.create(createUserDto);

@@ -20,7 +20,7 @@ export class UsersController {
       return response.status(400).json({
         message: error.message,
       });
-    };
+    }
   }
 
   @Get()
@@ -50,7 +50,7 @@ export class UsersController {
       return response.status(400).json({
         message: error.message,
       });
-    };
+    }
   }
 
   @Patch(':id')
