@@ -14,7 +14,7 @@ export class PostsService {
   ) { }
   create(createPostDto: CreatePostDto) {
     try {
-      c this.postRepository.create(createPostDto);
+      this.postRepository.create(createPostDto);
     } catch (err) {
       throw err
     }
